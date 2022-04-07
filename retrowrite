@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
     args = argp.parse_args()
 
-<<<<<<< HEAD
+
     if args.kernel:
         from librw.krw import Rewriter
         from librw import krw
@@ -169,7 +169,7 @@ if __name__ == "__main__":
         from rwtools.kasan.asantool import KcovInstrument
         from librw.kloader import Loader
         from librw.analysis import kregister
-=======
+
     if args.assemble:
         assemble(args.bin, args.outfile)
         exit(0)
@@ -209,7 +209,7 @@ if __name__ == "__main__":
             from rwtools_x64.asan.instrument import Instrument
             from librw_x64.loader import Loader
             from librw_x64.analysis import register
->>>>>>> hexhive-devel/master
+
     else:
         print(f"Architecture {arch} not supported!")
         exit(1)
